@@ -641,6 +641,7 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 2.25rem 0; }
    rodea y, en cuanto lo pasa, ocupa todo el ancho de la columna. */
 .prose--wrap { max-width: none; }
 .prose--wrap::after { content: ""; display: block; clear: both; }
+.prose--wrap > p { line-height: 1.7; margin-bottom: 1.4em; }
 
 .prose__figure {
   float: right;
