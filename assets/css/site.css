@@ -348,6 +348,14 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 2.25rem 0; }
 .page-hero__lead { font-size: var(--step-1); color: var(--ink-soft); max-width: 44rem; line-height: 1.4; text-align: left; }
 .page-hero h1 { max-width: 20ch; }
 
+/* Long service-page titles (Adults/Parents/Adolescents/Children): fit on one
+   line on desktop instead of wrapping; on narrow screens, wrap naturally
+   at the normal size rather than forcing a cramped single line. */
+.hero-title--fit { max-width: none; }
+@media (min-width: 900px) {
+  .hero-title--fit { white-space: nowrap; font-size: calc(var(--step-5) * .85); }
+}
+
 .breadcrumb { font-size: .82rem; color: var(--ink-faint); margin-bottom: .85rem; }
 .breadcrumb a { color: var(--ink-soft); text-decoration: none; }
 .breadcrumb a:hover { color: var(--terracotta-deep); text-decoration: underline; }
