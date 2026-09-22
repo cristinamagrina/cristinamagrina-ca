@@ -453,6 +453,7 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 2.25rem 0; }
   display: block;
   columns: 2;
   column-gap: 2.5rem;
+  text-align: left;
 }
 .checklist--2 li { break-inside: avoid; -webkit-column-break-inside: avoid; margin-bottom: .5rem; }
 @media (max-width: 640px) { .checklist--2 { columns: 1; } }
