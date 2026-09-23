@@ -507,7 +507,7 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 2.25rem 0; }
   transition: transform .3s var(--ease);
 }
 .accordion details[open] summary::after { transform: rotate(135deg); }
-.accordion__body { padding-bottom: 1.1rem; max-width: 68ch; color: var(--ink-soft); }
+.accordion__body { padding-bottom: 1.1rem; color: var(--ink-soft); }
 .accordion__body p { font-size: .98rem; }
 
 /* ------------------------------------------------------------- 11. CTA band */
