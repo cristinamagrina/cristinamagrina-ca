@@ -346,6 +346,7 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 2.25rem 0; }
 /* Page hero (interior pages) */
 .page-hero { padding-block: clamp(2.25rem, 4.5vw, 3.5rem) clamp(1.5rem, 2.5vw, 2rem); background: var(--cream-deep); }
 .page-hero__lead { font-size: var(--step-1); color: var(--ink-soft); max-width: 44rem; line-height: 1.4; text-align: left; }
+.page-hero__lead--wide { max-width: none; }
 .page-hero h1 { max-width: 20ch; }
 
 /* Long service-page titles (Adults/Parents/Adolescents/Children): fit on one
