@@ -610,6 +610,8 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 2.25rem 0; }
 .mt-1 { margin-top: 1rem; }
 .mt-2 { margin-top: 2rem; }
 .mt-3 { margin-top: 2rem; }
+.mb-0-5 { margin-bottom: .5rem; }
+.mb-1 { margin-bottom: 1rem; }
 .mb-2 { margin-bottom: 2rem; }
 .lead { font-size: var(--step-1); color: var(--ink-soft); line-height: 1.4; text-align: left; }
 .muted { color: var(--ink-soft); }
