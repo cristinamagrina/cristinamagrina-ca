@@ -1,0 +1,14 @@
+{
+  "domain": "cristinamagrina.es",
+  "origin": "https://cristinamagrina.es",
+  "siteName": "Cristina Magriñá Psicología",
+  "email": "info@cristinamagrina.es",
+  "defaultLocale": "es",
+  "cleanUrls": true,
+  "defaultImage": "hero-forest.jpg",
+  "locales": {
+    "es": { "dir": "", "mailSubject": "Consulta inicial" },
+    "en": { "dir": "en", "mailSubject": "Initial consultation" }
+  },
+  "robots": { "disallow": ["/legal/", "/en/legal/"] }
+}

@@ -1,0 +1,55 @@
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <img src="{{root}}assets/img/logo-light.png" alt="Cristina Magriñá Psychology" width="1079" height="297">
+        <p><mark class="todo">[TO CONFIRM: tagline, e.g. In-person psychology in Barcelona]</mark></p>
+      </div>
+      <div>
+        <h2>Practice</h2>
+        <ul>
+          <li><a href="{{base}}about.html">About Cristina</a></li>
+          <li><a href="{{base}}approach.html">Approach</a></li>
+          <li><a href="{{base}}faq.html">FAQ</a></li>
+          <li><a href="{{base}}book.html">Book &amp; fees</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Contact</h2>
+        <ul>
+          <li><a href="mailto:{{email}}">{{email}}</a></li>
+          <li><a href="https://www.linkedin.com/in/cristina-magrina-sanchez/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><mark class="todo">[TO CONFIRM: office address in Barcelona]</mark></li>
+        </ul>
+        <p style="margin-top:1rem;font-size:.85rem;color:rgba(248,245,241,.5)"><mark class="todo">[TO CONFIRM: session format (in person / online)]</mark></p>
+      </div>
+    </div>
+    <p class="footer__disclaimer">This website is for information purposes only and does not constitute psychological advice. Reading this site or contacting Cristina Magriñá by email does not establish a therapeutic relationship. If you are in crisis or need urgent help, call <strong>112</strong> (emergencies) or <strong>024</strong> (suicide prevention helpline) in Spain, available 24/7.</p>
+    <div class="footer__bottom">
+      <p>© {{year}} Cristina Magriñá. All rights reserved.</p>
+      <nav class="footer__legal" aria-label="Legal">
+        <a href="{{base}}legal/privacy-policy.html">Privacy Policy</a>
+        <a href="{{base}}legal/legal-notice.html">Legal Notice</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+<div class="bk" id="bookDialog" hidden>
+  <div class="bk__backdrop" data-bk-close></div>
+  <div class="bk__panel" role="dialog" aria-modal="true" aria-labelledby="bkTitle">
+    <button class="bk__close" type="button" data-bk-close aria-label="Close">&times;</button>
+    <p class="eyebrow" style="justify-content:center">Write to me</p>
+    <h2 id="bkTitle" class="bk__title">{{mailSubject}}</h2>
+    <p class="bk__mail"><a href="mailto:{{email}}?subject={{mailSubjectEnc}}">{{email}}</a></p>
+    <div class="bk__actions">
+      <a class="btn btn--primary" href="mailto:{{email}}?subject={{mailSubjectEnc}}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>Open my email app</a>
+      <a class="btn btn--outline" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to={{email}}&amp;su={{mailSubjectEnc}}" target="_blank" rel="noopener">Write from Gmail</a>
+      <a class="btn btn--outline" href="https://outlook.live.com/mail/0/deeplink/compose?to={{email}}&amp;subject={{mailSubjectEnc}}" target="_blank" rel="noopener">Write from Outlook</a>
+      <button class="btn btn--outline" type="button" data-copy="{{email}}"
+              data-copied="Copied">Copy address</button>
+    </div>
+    <p class="bk__hint">If the first button doesn't open anything, your device may not have an email app set up — copy the address or use Gmail or Outlook.</p>
+  </div>
+</div>
+<script src="{{root}}assets/js/config.js"></script>
+<script src="{{root}}assets/js/site.js"></script>

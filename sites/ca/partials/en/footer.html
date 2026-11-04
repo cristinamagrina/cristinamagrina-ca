@@ -1,0 +1,61 @@
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <img src="{{root}}assets/img/logo-light.png" alt="Cristina Magriñá Psychology" width="1079" height="297">
+        <p>Online psychological services in Ontario, Quebec and Nova Scotia.</p>
+      </div>
+      <div>
+        <h2>Who I help</h2>
+        <ul><li><a href="{{base}}adults.html">Adults</a></li><li><a href="{{base}}parents.html">Parents</a></li><li><a href="{{base}}teens.html">Teens</a></li><li><a href="{{base}}children.html">Children</a></li></ul>
+      </div>
+      <div>
+        <h2>Practice</h2>
+        <ul>
+          <li><a href="{{base}}about.html">About Cristina</a></li>
+          <li><a href="{{base}}approach.html">Approach</a></li>
+          <li><a href="{{base}}faq.html">FAQ</a></li>
+          <li><a href="{{base}}book.html">Book & fees</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Contact</h2>
+        <ul>
+          <li><a href="mailto:{{email}}">{{email}}</a></li>
+          <li><a href="https://www.linkedin.com/in/cristina-magrina-sanchez/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://www.psychologytoday.com/ca/therapists/cristina-magrina-toronto-on/743237" target="_blank" rel="noopener">Psychology Today</a></li>
+        </ul>
+        <p style="margin-top:1rem;font-size:.85rem;color:rgba(248,245,241,.5)">Sessions are held remotely by secure video call.</p>
+      </div>
+    </div>
+    <p class="footer__disclaimer">This website is for information purposes only and does not constitute psychological advice. Reading this site or contacting Cristina Magriñá by email does not establish a psychologist–client relationship. If you are in crisis or need urgent help, contact your local emergency services or, in Canada, call or text <strong>9-8-8</strong> (Suicide Crisis Helpline), available 24/7.</p>
+    <div class="footer__bottom">
+      <p>© {{year}} Cristina Magriñá psychological services. All rights reserved.</p>
+      <nav class="footer__legal" aria-label="Legal">
+        <a href="{{base}}legal/privacy-policy.html">Privacy Policy</a>
+        <a href="{{base}}legal/accessibility-statement.html">Accessibility Statement</a>
+        <a href="{{base}}legal/terms-and-conditions.html">Terms &amp; Conditions</a>
+        <a href="{{base}}legal/refund-policy.html">Refund Policy</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+<div class="bk" id="bookDialog" hidden>
+  <div class="bk__backdrop" data-bk-close></div>
+  <div class="bk__panel" role="dialog" aria-modal="true" aria-labelledby="bkTitle">
+    <button class="bk__close" type="button" data-bk-close aria-label="Close">&times;</button>
+    <p class="eyebrow" style="justify-content:center">Write to me</p>
+    <h2 id="bkTitle" class="bk__title">Free 15-minute consultation</h2>
+    <p class="bk__mail"><a href="mailto:{{email}}?subject={{mailSubjectEnc}}">{{email}}</a></p>
+    <div class="bk__actions">
+      <a class="btn btn--primary" href="mailto:{{email}}?subject={{mailSubjectEnc}}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>Open my email app</a>
+      <a class="btn btn--outline" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to={{email}}&amp;su={{mailSubjectEnc}}" target="_blank" rel="noopener">Write from Gmail</a>
+      <a class="btn btn--outline" href="https://outlook.live.com/mail/0/deeplink/compose?to={{email}}&amp;subject={{mailSubjectEnc}}" target="_blank" rel="noopener">Write from Outlook</a>
+      <button class="btn btn--outline" type="button" data-copy="{{email}}"
+              data-copied="Copied">Copy address</button>
+    </div>
+    <p class="bk__hint">If the first button doesn't open anything, your device may not have an email app set up — copy the address or use Gmail or Outlook.</p>
+  </div>
+</div>
+<script src="{{root}}assets/js/config.js"></script>
+<script src="{{root}}assets/js/site.js"></script>

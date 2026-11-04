@@ -1,0 +1,14 @@
+{
+  "name": "cristinamagrina-sites",
+  "private": true,
+  "description": "Static sites for cristinamagrina.ca (online therapy, Canada) and cristinamagrina.es (in-person therapy, Spain)",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "build": "node build.js all",
+    "build:ca": "node build.js ca",
+    "build:es": "node build.js es",
+    "check": "node build.js check",
+    "dev:ca": "node build.js serve ca",
+    "dev:es": "node build.js serve es"
+  }
+}

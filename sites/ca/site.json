@@ -1,0 +1,14 @@
+{
+  "domain": "cristinamagrina.ca",
+  "origin": "https://cristinamagrina.ca",
+  "siteName": "Cristina Magriñá Psychology",
+  "email": "info@cristinamagrina.ca",
+  "defaultLocale": "en",
+  "cleanUrls": true,
+  "defaultImage": "hero-forest.jpg",
+  "locales": {
+    "en": { "dir": "", "mailSubject": "Free 15-minute consultation" },
+    "es": { "dir": "es", "mailSubject": "Consulta gratuita de 15 minutos" }
+  },
+  "robots": { "disallow": ["/legal/"] }
+}

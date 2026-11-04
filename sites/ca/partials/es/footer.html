@@ -1,0 +1,61 @@
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <img src="{{root}}assets/img/logo-light.png" alt="Cristina Magriñá Psychology" width="1079" height="297">
+        <p>Servicios de psicología online en Ontario, Quebec y Nueva Escocia.</p>
+      </div>
+      <div>
+        <h2>A quién acompaño</h2>
+        <ul><li><a href="{{base}}adults.html">Adultos</a></li><li><a href="{{base}}parents.html">Padres</a></li><li><a href="{{base}}adolescents.html">Adolescentes</a></li><li><a href="{{base}}children.html">Niños</a></li></ul>
+      </div>
+      <div>
+        <h2>La consulta</h2>
+        <ul>
+          <li><a href="{{base}}about.html">Sobre Cristina</a></li>
+          <li><a href="{{base}}approach.html">Mi enfoque</a></li>
+          <li><a href="{{base}}faq.html">Preguntas frecuentes</a></li>
+          <li><a href="{{base}}book.html">Reservas y tarifas</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Contacto</h2>
+        <ul>
+          <li><a href="mailto:{{email}}">{{email}}</a></li>
+          <li><a href="https://www.linkedin.com/in/cristina-magrina-sanchez/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://www.psychologytoday.com/ca/therapists/cristina-magrina-toronto-on/743237" target="_blank" rel="noopener">Psychology Today</a></li>
+        </ul>
+        <p style="margin-top:1rem;font-size:.85rem;color:rgba(248,245,241,.5)">Las sesiones son online, por videollamada segura.</p>
+      </div>
+    </div>
+    <p class="footer__disclaimer">Esta web tiene únicamente carácter informativo y no constituye asesoramiento psicológico. Leer este sitio o escribir a Cristina Magriñá por correo no establece una relación terapeuta–paciente. Si estás en crisis o necesitas ayuda urgente, contacta con los servicios de emergencia de tu zona o, en Canadá, llama o envía un mensaje al <strong>9-8-8</strong> (línea de prevención del suicidio), disponible 24 horas.</p>
+    <div class="footer__bottom">
+      <p>© {{year}} Cristina Magriñá psychological services. Todos los derechos reservados.</p>
+      <nav class="footer__legal" aria-label="Legal">
+        <a href="{{base}}legal/privacy-policy.html">Política de privacidad</a>
+        <a href="{{base}}legal/accessibility-statement.html">Declaración de accesibilidad</a>
+        <a href="{{base}}legal/terms-and-conditions.html">Términos y condiciones</a>
+        <a href="{{base}}legal/refund-policy.html">Política de reembolsos</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+<div class="bk" id="bookDialog" hidden>
+  <div class="bk__backdrop" data-bk-close></div>
+  <div class="bk__panel" role="dialog" aria-modal="true" aria-labelledby="bkTitle">
+    <button class="bk__close" type="button" data-bk-close aria-label="Cerrar">&times;</button>
+    <p class="eyebrow" style="justify-content:center">Escríbeme a</p>
+    <h2 id="bkTitle" class="bk__title">Consulta gratuita de 15 minutos</h2>
+    <p class="bk__mail"><a href="mailto:{{email}}?subject={{mailSubjectEnc}}">{{email}}</a></p>
+    <div class="bk__actions">
+      <a class="btn btn--primary" href="mailto:{{email}}?subject={{mailSubjectEnc}}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>Abrir mi app de correo</a>
+      <a class="btn btn--outline" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to={{email}}&amp;su={{mailSubjectEnc}}" target="_blank" rel="noopener">Escribir desde Gmail</a>
+      <a class="btn btn--outline" href="https://outlook.live.com/mail/0/deeplink/compose?to={{email}}&amp;subject={{mailSubjectEnc}}" target="_blank" rel="noopener">Escribir desde Outlook</a>
+      <button class="btn btn--outline" type="button" data-copy="{{email}}"
+              data-copied="Copiada">Copiar dirección</button>
+    </div>
+    <p class="bk__hint">Si el primer botón no abre nada, puede que tu dispositivo no tenga configurada una app de correo: copia la dirección o usa Gmail u Outlook.</p>
+  </div>
+</div>
+<script src="{{root}}assets/js/config.js"></script>
+<script src="{{root}}assets/js/site.js"></script>
