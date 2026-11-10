@@ -5,10 +5,10 @@
   "email": "info@cristinamagrina.es",
   "defaultLocale": "es",
   "cleanUrls": true,
+  "fonts": "self",
   "defaultImage": "hero-forest.jpg",
   "locales": {
-    "es": { "dir": "", "mailSubject": "Consulta inicial" },
-    "en": { "dir": "en", "mailSubject": "Initial consultation" }
-  },
-  "robots": { "disallow": ["/legal/", "/en/legal/"] }
+    "es": { "dir": "", "lang": "es", "hreflang": "es-ES", "mailSubject": "Consulta inicial" },
+    "en": { "dir": "en", "lang": "en", "hreflang": "en-ES", "mailSubject": "Initial consultation" }
+  }
 }

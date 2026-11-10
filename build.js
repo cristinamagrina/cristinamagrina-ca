@@ -155,18 +155,28 @@ function buildSite(id) {
     }
     const toggle = meta.absolute ? '/' + target : posix.relative(posix.dirname(rel), target);
 
-    // hreflang alternates
+    // hreflang alternates. A locale may declare "hreflang" (e.g. "es-ES") and "lang" (<html lang>) in
+    // site.json; both default to the locale key, which keeps the .ca output unchanged.
+    const hl = l => site.locales[l].hreflang || l;
     let hreflang = '';
     for (const l of locales) {
       const lid = l === locale ? pid : ((l !== locale && meta.counterparts && meta.counterparts[l]) || pid);
-      if (pages.has(`${l}:${lid}`)) hreflang += `  <link rel="alternate" hreflang="${l}" href="${urlOf(site, l, lid)}">\n`;
+      if (pages.has(`${l}:${lid}`)) hreflang += `  <link rel="alternate" hreflang="${hl(l)}" href="${urlOf(site, l, lid)}">\n`;
     }
     const defId = site.defaultLocale === locale ? pid : ((meta.counterparts && meta.counterparts[site.defaultLocale]) || pid);
     if (pages.has(`${site.defaultLocale}:${defId}`)) hreflang += `  <link rel="alternate" hreflang="x-default" href="${urlOf(site, site.defaultLocale, defId)}">\n`;
 
+    // fonts: default = Google Fonts (as the original site); "self" = self-hosted files in assets/fonts
+    const fontLinks = site.fonts === 'self'
+      ? `  <link rel="preload" href="${rootPrefix}assets/fonts/inter-latin-2.woff2" as="font" type="font/woff2" crossorigin>\n` +
+        `  <link rel="stylesheet" href="${rootPrefix}assets/css/fonts.css">`
+      : '  <link rel="preconnect" href="https://fonts.googleapis.com">\n' +
+        '  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n' +
+        '  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">';
+
     const loc = site.locales[locale];
     const vars = {
-      lang: locale, current: pid, root: rootPrefix, base: basePrefix, toggle,
+      lang: loc.lang || locale, current: pid, root: rootPrefix, base: basePrefix, toggle, fontLinks,
       title: meta.title, description: meta.description,
       ogTitle: meta.ogTitle ?? meta.title, ogDescription: meta.ogDescription ?? meta.description,
       image: meta.image ?? site.defaultImage ?? 'hero-forest.jpg',
@@ -203,7 +213,7 @@ function buildSite(id) {
     xml += `  <url>\n    <loc>${urlOf(site, p.locale, p.id)}</loc>\n`;
     for (const l of locales) {
       const lid = l === p.locale ? p.id : ((p.meta.counterparts && p.meta.counterparts[l]) || p.id);
-      if (pages.has(`${l}:${lid}`)) xml += `    <xhtml:link rel="alternate" hreflang="${l}" href="${urlOf(site, l, lid)}"/>\n`;
+      if (pages.has(`${l}:${lid}`)) xml += `    <xhtml:link rel="alternate" hreflang="${site.locales[l].hreflang || l}" href="${urlOf(site, l, lid)}"/>\n`;
     }
     xml += `    <priority>${prio}</priority>\n  </url>\n`;
   }
