@@ -1,3 +1,9 @@
 # Old English teens page (renamed from adolescents.html)
 /adolescents.html /teens 301
 /adolescents /teens 301
+
+# Addresses from the previous website that Google still knows
+/who-i-help/adolescents /teens 301
+/who-i-help/adults /adults 301
+/es/who-i-help/parents /es/parents 301
+/es/book-online /es/book 301
