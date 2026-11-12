@@ -670,6 +670,7 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 2.25rem 0; }
   .prose__figure {
     float: none; width: 100%; margin: 0 0 1.25rem;
     aspect-ratio: 5 / 4;
+    object-position: 50% 18%; /* keep the face in frame on the wider mobile crop */
   }
 }
 
