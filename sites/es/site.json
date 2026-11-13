@@ -8,7 +8,7 @@
   "fonts": "self",
   "defaultImage": "hero-forest.jpg",
   "locales": {
-    "es": { "dir": "", "lang": "es", "hreflang": "es-ES", "mailSubject": "Consulta inicial" },
-    "en": { "dir": "en", "lang": "en", "hreflang": "en-ES", "mailSubject": "Initial consultation" }
+    "es": { "dir": "", "lang": "es", "hreflang": "es-ES", "mailSubject": "Consulta gratuita de 15 minutos" },
+    "en": { "dir": "en", "lang": "en", "hreflang": "en-ES", "mailSubject": "Free 15-minute consultation" }
   }
 }
